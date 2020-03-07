@@ -48,5 +48,6 @@ blockquote {
 @media (max-width: 860px) {
   body {
     flex-direction: column;
+    padding: 3em;
   }
 }
