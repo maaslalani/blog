@@ -17,4 +17,4 @@ Whatever you want to do, do it now. There are only so many tomorrows.
 
 If there is one thing death teaches us, it is not to waste time.
 
-"Like sands through the hourglass, so are the days of our lives."
+> Like sands through the hourglass, so are the days of our lives.

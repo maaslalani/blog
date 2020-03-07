@@ -12,4 +12,4 @@ Everyday, I wake up and have never thankful for my eyesight. The following day I
 
 I intend to be thankful for my eyesight everyday.
 
-"I opened two gifts this morning. They were my eyes."
+> I opened two gifts this morning. They were my eyes.

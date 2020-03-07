@@ -23,7 +23,6 @@ function createListElement(text) {
 // fetch contents of post and display it
 function setPost(postTitle) {
   fetch(postTitle)
-    .catch(console.log)
     .then(file => file.text())
     .then(text => {
       main.innerHTML = converter.makeHtml(text);

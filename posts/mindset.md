@@ -8,7 +8,7 @@ A mindset is a fixed mental attitude or disposition that predetermines a person'
 
 A person who tends to recognize themselves as a victim of the negative actions of others. In every situation, the person who has the victim mindset always assumes that the other has harmed or attacked them in some way. Even if this is the case, this mindset trait does not help in any situation.
 
-"Choose not to be harmed — and you won't feel harmed. Don't feel harmed — and you haven't been."
+> Choose not to be harmed — and you won't feel harmed. Don't feel harmed — and you haven't been.
 
 Not assuming harm can be an amazing way to not become responsible for your actions and even the actions of others, instead of always feeling discouraged. Instead of being a victim, be a person who can endure pain or hardship without showing their feelings or complaining.
 

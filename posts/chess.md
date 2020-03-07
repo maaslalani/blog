@@ -28,4 +28,4 @@ Each Member on a team brings a unique skill set. Just like how all chess pieces,
 
 No matter what, just remember that
 
-"At the end of a game of chess, the king and pawn are put back in the same box."
+> At the end of a game of chess, the king and pawn are put back in the same box.

@@ -1,11 +1,12 @@
 # Momentum
 
-"Objects in motion stay in motion, objects at rest stay at rest, unless an external force acts upon them."
-- Isaac Newton
+> Objects in motion stay in motion, objects at rest stay at rest, unless an external force acts upon them.
+
+~ Isaac Newton
 
 Momentum is essential for doing things. Once a task is complete, there is momentum for completing another task. Once you do the first push up, the second one isn't so difficult. After the first step, you can go on a run.
 
-"The heaviest weight at the gym is the front door."
+> The heaviest weight at the gym is the front door.
 
 Applying this law of motion from physics to life is an interesting way to see how the human mind and body work.
 

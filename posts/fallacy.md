@@ -22,6 +22,8 @@ I have probably missed out on some sound advice simply because I didn't like the
 
 I think this strategy will make me a better thinker maybe, if I am lucky, a better person.
 
-We shouldn't decide everything by polling the masses. This is the fallacy argumentum ad numerum, the idea that something is true because great numbers believe it, as in "Eat shit. 20 trillion flies can't be wrong."
+We shouldn't decide everything by polling the masses. This is the fallacy argumentum ad numerum, the idea that something is true because great numbers believe it, as in
+
+> Eat shit. 20 trillion flies can't be wrong.
 
 ~ Bill Maher, 2010
