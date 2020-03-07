@@ -1,0 +1,12 @@
+chess
+eyesight
+fallacy
+game
+hourglass
+launch
+luck
+mindset
+momentum
+resolutions
+simplify
+why
