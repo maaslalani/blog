@@ -1,0 +1,14 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "yet another blog",
+  "main": "index.html",
+  "repository": "git@github.com:maaslalani/blog.git",
+  "author": "Maas Lalani <maaslalani1@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "new": "sh scripts/new.sh",
+    "delete": "sh scripts/delete.sh",
+    "update": "sh scripts/update.sh"
+  }
+}
