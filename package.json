@@ -7,8 +7,8 @@
   "author": "Maas Lalani <maaslalani1@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "new": "sh scripts/new.sh",
-    "delete": "sh scripts/delete.sh",
-    "update": "sh scripts/update.sh"
+    "new": "sh bin/new.sh",
+    "delete": "sh bin/delete.sh",
+    "update": "sh bin/update.sh"
   }
 }
