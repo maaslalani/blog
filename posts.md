@@ -1,4 +1,5 @@
 chess
+cryptography
 eyesight
 fallacy
 game
