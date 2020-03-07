@@ -1,6 +1,7 @@
 const navigation = document.querySelector('ul');
 const main = document.querySelector('main');
 const converter = new showdown.Converter();
+converter.setFlavor('github');
 
 // get list of posts and populate archives
 const postsFile = './posts.md';
