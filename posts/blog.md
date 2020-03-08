@@ -18,7 +18,7 @@ Then, view any particular blog post:
 curl https://maaslalani.com/blog/posts/blog.md
 ```
 
-The sidebar to the left is populated by the same script that reads [a file](./posts.md) and converts each line in that file to a link that goes to the URL of this page followed by `#/title`. Whenever the `window.location.hash` of this page changes, the script loads in the matching markdown file from the [`./posts`](./posts/) directory.
+The sidebar to the left is populated by the same script that reads [a file](./posts.md) and converts each line in that file to a link that goes to the URL of this page followed by `#/title`. Whenever the `window.location.hash` of this page changes, the script loads in the matching markdown file from the [`./posts`](./posts) directory.
 
 That is pretty much all there is to it. I love simplicity. There are definitely some features missing, though.
 
