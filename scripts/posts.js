@@ -15,7 +15,7 @@ async function fetchFile(filename) {
 }
 
 function setPosts() {
-  navigation.innerHTML = posts
+  navigation.innerHTML = paginated(posts)
     .replace(/(\w+)/g, '<a href="#/$1"><li>$1</li></a>');
 }
 
