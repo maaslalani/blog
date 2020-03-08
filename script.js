@@ -1,40 +1,36 @@
 const navigation = document.querySelector('ul');
 const main = document.querySelector('main');
+
 const converter = new showdown.Converter();
 converter.setFlavor('github');
 
-// get list of posts and populate archives
-const postsFile = './posts.md';
+let posts = [];
 
-fetch(postsFile)
-  .then(file => file.text())
-  .then(setPosts);
-
-function setPosts(text) {
-  const posts = text.split('\n');
-  const postsList = posts.map(createListElement);
-  const postsHtml = postsList.join('\n');
-  navigation.innerHTML = postsHtml;
+async function fetchPosts(postsFile) {
+  posts = await fetchFile(postsFile);
 }
 
-function createListElement(text) {
-  return `<a href="#/${text}"><li>${text}</li></a>`;
+async function fetchFile(filename) {
+  return await (await fetch(filename)).text();
+}
+
+function setPosts() {
+  navigation.innerHTML = posts
+    .replace(/(\w+)/g, '<a href="#/$1"><li>$1</li></a>');
 }
 
 // fetch contents of post and display it
-function setPost(postTitle) {
-  fetch(postTitle)
-    .then(file => file.text())
-    .then(text => {
-      main.innerHTML = converter.makeHtml(text);
-      Prism.highlightAll();
-    })
+async function setPost(postTitle) {
+  main.innerHTML = converter.makeHtml(await fetchFile(postTitle));
 }
 
 function handleHashChange() {
   const { hash } = window.location;
   setPost(`posts/${hash.split('/')[1]}.md`);
 }
+
+fetchPosts('./posts.md')
+  .then(setPosts);
 
 handleHashChange();
 window.onhashchange = handleHashChange;
