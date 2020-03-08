@@ -1,4 +1,11 @@
+:root {
+  --foreground: #111;
+  --background: #EEE;
+}
+
 body {
+  background: var(--background);
+  color: var(--foreground);
   display: flex;
   font-family: sans-serif;
   line-height: 1.7em;
@@ -30,8 +37,8 @@ header ul li:hover {
 }
 
 a {
-  border-bottom: 1px solid black;
-  color: black;
+  border-bottom: 1px solid var(--foreground);
+  color: var(--foreground);
   text-decoration: none;
 }
 

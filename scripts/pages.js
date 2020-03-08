@@ -43,5 +43,5 @@ function handleKeydown(event) {
   }
 }
 
-document.onkeydown = handleKeydown;
-pageDisplay.onclick = nextPage;
+document.addEventListener('keydown', handleKeydown);
+pageDisplay.addEventListener('click', nextPage);
