@@ -19,7 +19,6 @@ function setPosts() {
     .replace(/(\w+)/g, '<a href="#/$1"><li>$1</li></a>');
 }
 
-// fetch contents of post and display it
 async function setPost(postTitle) {
   main.innerHTML = converter.makeHtml(await fetchFile(postTitle));
 }
