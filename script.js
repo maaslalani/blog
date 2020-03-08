@@ -4,7 +4,7 @@ const main = document.querySelector('main');
 const converter = new showdown.Converter();
 converter.setFlavor('github');
 
-let posts = [];
+let posts;
 
 async function fetchPosts(postsFile) {
   posts = await fetchFile(postsFile);
