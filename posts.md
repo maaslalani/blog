@@ -1,3 +1,4 @@
+blog
 chess
 cryptography
 eyesight
