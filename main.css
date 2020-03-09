@@ -32,8 +32,15 @@ header ul {
   padding: 0;
 }
 
+header page {
+  font-family: menlo, monospace;
+  cursor: e-resize;
+  padding: .5em 1em;
+  padding-left: 0;
+}
+
 header ul li:hover {
-  opacity: 0.5;
+  opacity: .5;
 }
 
 a {

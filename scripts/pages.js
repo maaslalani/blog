@@ -1,4 +1,4 @@
-const pageDisplay = document.querySelector('page-number');
+const pageDisplay = document.querySelector('header page');
 const pageSize = 15;
 
 let page = 0;
@@ -21,7 +21,7 @@ function paginated(posts) {
 }
 
 function nextPage() {
-  page = Math.min(page + 1, pageCount(posts));
+  page = ++page > pageCount(posts) ? 0 : page;
   updatePageDisplay();
 }
 
