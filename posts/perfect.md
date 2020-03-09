@@ -6,7 +6,7 @@ Nothing is perfect. I don't believe anything can be perfect either. Things can, 
 
 I think of the concept of perfection a lot like I think about Infinity in math. It's possible in theory and I understand it exists but it's only a concept. Imagine I asked you to count to infinity. You would never stop saying numbers. You would just be standing there forever. Infinity isn't neccessary if 100 is good enough. This thinking has helped me a lot in practice. I've stopped attempting to count to infinity. There are better things to do.
 
-Versioning stuff is the most beneficial concept that I use. When trying to create, I attempt a version 1. Once that is done, I think about what's missing. Version 2 comes if I think the previous iteration is not good enough, and I repeat. I think about it like counting by skipping numbers. Counting to a thousand is a lot easier if your interval is 100.
+Versioning stuff is a very beneficial concept that I use. When trying to create, I attempt a version 1. Once that is done, I think about what's missing. Version 2 comes if I think the previous iteration is not good enough, and I repeat. I think about it like counting by skipping numbers. Counting to a thousand is a lot easier if your interval is 100.
 
 This is probably what version 1 would look like:
 
