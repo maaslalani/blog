@@ -9,6 +9,7 @@ launch
 luck
 mindset
 momentum
+perfect
 resolutions
 simplify
 why
