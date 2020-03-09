@@ -10,7 +10,7 @@ function updateTheme() {
   root.style.setProperty('--background', inverted ? foreground : background);
 }
 
-function handleKeypress(event) {
+function switchTheme(event) {
   switch (event.keyCode) {
     case 68:
     case 192:
@@ -20,4 +20,4 @@ function handleKeypress(event) {
   }
 }
 
-document.addEventListener('keypress', handleKeypress);
+document.addEventListener('keyup', switchTheme);

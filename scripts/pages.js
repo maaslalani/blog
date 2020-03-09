@@ -30,7 +30,7 @@ function previousPage() {
   updatePageDisplay();
 }
 
-function handleKeydown(event) {
+function switchPage(event) {
   switch (event.keyCode) {
     case 37:
     case 72:
@@ -43,5 +43,5 @@ function handleKeydown(event) {
   }
 }
 
-document.addEventListener('keydown', handleKeydown);
+document.addEventListener('keydown', switchPage);
 pageDisplay.addEventListener('click', nextPage);
