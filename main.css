@@ -54,7 +54,7 @@ code {
 }
 
 blockquote {
-  border-left: 3px solid #eee;
+  border-left: 3px solid var(--foreground);
   margin: 0;
   padding-left: 1em;
 }
