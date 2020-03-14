@@ -1,6 +1,7 @@
 blog
 butterfly
 chess
+colemak
 cryptography
 eyesight
 fallacy
