@@ -3,6 +3,7 @@ butterfly
 chess
 colemak
 cryptography
+ephemeral
 eyesight
 fallacy
 game
@@ -13,6 +14,7 @@ mindset
 momentum
 perfect
 resolutions
+rules
 simplify
 why
 youtube
