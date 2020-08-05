@@ -28,7 +28,7 @@ function handleHashChange() {
   setPost(`posts/${hash.split('/')[1]}.md`);
 }
 
-fetchPosts('./posts.md')
+fetchPosts('./posts.text')
   .then(setPosts);
 
 handleHashChange();

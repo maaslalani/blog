@@ -9,7 +9,7 @@ Because of this this entire blog can be read through just curling links. Try it 
 
 Get a list of all blog posts:
 ```bash
-curl https://maaslalani.com/blog/posts.md
+curl https://maaslalani.com/blog/posts.text
 ```
 
 Then, view any particular blog post:
@@ -18,7 +18,7 @@ Then, view any particular blog post:
 curl https://maaslalani.com/blog/posts/blog.md
 ```
 
-The sidebar to the left is populated by the same script that reads [a file](./posts.md) and converts each line in that file to a link that goes to the URL of this page followed by `#/title`. Whenever the `window.location.hash` of this page changes, the script loads in the matching markdown file from the [`./posts`](./posts) directory.
+The sidebar to the left is populated by the same script that reads [a file](./posts.text) and converts each line in that file to a link that goes to the URL of this page followed by `#/title`. Whenever the `window.location.hash` of this page changes, the script loads in the matching markdown file from the [`./posts`](./posts) directory.
 
 That is pretty much all there is to it. I love simplicity. There are definitely some features missing, though.
 
@@ -32,10 +32,10 @@ I can type `new hello` and the `new.sh` script will be executed which will creat
 
 I can type `delete hello` and the `delete.sh` script will reverse the effects of a `new` operation. Namely, it will `rm` (remove) the `hello.md` file in the `posts/` directory and update the posts list to reflect the folder.
 
-The `update.sh` script's main functionality is that it lists out all files in the `posts/` directory and then removes the `.md` file extensions and removes the `undefined.md` file and then writes to the `posts.md` file which is then read upon site visit to populate the sidebar. The `undefined.md` file contains [the introduction](./posts/undefined.md) to this blog. It is named `undefined.md` since I use a little javascript trick that makes use of javascript return undefined when a file is not found to make the logic in the code a little more simple (although this might make it more magical).
+The `update.sh` script's main functionality is that it lists out all files in the `posts/` directory and then removes the `.md` file extensions and removes the `undefined.md` file and then writes to the `posts.text` file which is then read upon site visit to populate the sidebar. The `undefined.md` file contains [the introduction](./posts/undefined.md) to this blog. It is named `undefined.md` since I use a little javascript trick that makes use of javascript return undefined when a file is not found to make the logic in the code a little more simple (although this might make it more magical).
 
 ```bash
-ls -1 ../posts | sed -e 's/.md//' -e '/undefined/d' > ../posts.md
+ls -1 ../posts | sed -e 's/.md//' -e '/undefined/d' > ../posts.text
 ```
 
 The [source code](https://github.com/maaslalani/blog) is available on github. 
