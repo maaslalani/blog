@@ -12,6 +12,4 @@ It should be a red flag if the answer to a "why" question is "just because" or "
 
 After asking the golden question, start making decisions that attack the root of the issue or problem you are trying to solve and try to think for yourself instead of accepting conventional wisdom. Hopefully, this leads to more intentional decision making for important choices.
 
-Do not eat minty candy. Just brush your teeth.
-
 Now ask yourself: Why did I read this?
