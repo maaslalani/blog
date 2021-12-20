@@ -12,7 +12,7 @@ async function view({target}) {
 }
 
 async function render(post) {
-  const response = await fetch(`/posts/${post}.md`);
+  const response = await fetch(`posts/${post}.md`);
   const content = await response.text();
   text = markdownToHtml(content);
 }
