@@ -382,14 +382,14 @@ var app = (function () {
 
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[4] = list[i];
+    	child_ctx[5] = list[i];
     	return child_ctx;
     }
 
-    // (86:4) {#each posts as post}
+    // (85:4) {#each posts as post}
     function create_each_block(ctx) {
     	let a;
-    	let t_value = /*post*/ ctx[4] + "";
+    	let t_value = /*post*/ ctx[5] + "";
     	let t;
     	let mounted;
     	let dispose;
@@ -398,8 +398,9 @@ var app = (function () {
     		c: function create() {
     			a = element("a");
     			t = text(t_value);
+    			attr_dev(a, "href", "#/" + /*post*/ ctx[5]);
     			attr_dev(a, "class", "svelte-wdrs62");
-    			add_location(a, file, 86, 6, 1378);
+    			add_location(a, file, 85, 6, 1373);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -422,7 +423,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(86:4) {#each posts as post}",
+    		source: "(85:4) {#each posts as post}",
     		ctx
     	});
 
@@ -437,6 +438,8 @@ var app = (function () {
     	let t1;
     	let t2;
     	let div1;
+    	let mounted;
+    	let dispose;
     	let each_value = /*posts*/ ctx[1];
     	validate_each_argument(each_value);
     	let each_blocks = [];
@@ -462,18 +465,18 @@ var app = (function () {
     			div1 = element("div");
     			attr_dev(h1, "id", "thinking");
     			attr_dev(h1, "class", "svelte-wdrs62");
-    			add_location(h1, file, 84, 16, 1300);
-    			attr_dev(a, "href", "/");
+    			add_location(h1, file, 83, 42, 1295);
+    			attr_dev(a, "href", "#");
     			attr_dev(a, "class", "svelte-wdrs62");
-    			add_location(a, file, 84, 4, 1288);
+    			add_location(a, file, 83, 4, 1257);
     			attr_dev(div0, "id", "sidebar");
     			attr_dev(div0, "class", "svelte-wdrs62");
-    			add_location(div0, file, 83, 2, 1265);
+    			add_location(div0, file, 82, 2, 1234);
     			attr_dev(div1, "id", "article");
     			attr_dev(div1, "class", "svelte-wdrs62");
-    			add_location(div1, file, 89, 2, 1431);
+    			add_location(div1, file, 88, 2, 1442);
     			attr_dev(main, "class", "svelte-wdrs62");
-    			add_location(main, file, 82, 0, 1256);
+    			add_location(main, file, 81, 0, 1225);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -492,9 +495,14 @@ var app = (function () {
     			append_dev(main, t2);
     			append_dev(main, div1);
     			div1.innerHTML = /*text*/ ctx[0];
+
+    			if (!mounted) {
+    				dispose = listen_dev(a, "click", /*click_handler*/ ctx[4], false, false, false);
+    				mounted = true;
+    			}
     		},
     		p: function update(ctx, [dirty]) {
-    			if (dirty & /*view, posts*/ 6) {
+    			if (dirty & /*posts, view*/ 6) {
     				each_value = /*posts*/ ctx[1];
     				validate_each_argument(each_value);
     				let i;
@@ -524,6 +532,8 @@ var app = (function () {
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(main);
     			destroy_each(each_blocks, detaching);
+    			mounted = false;
+    			dispose();
     		}
     	};
 
@@ -547,7 +557,6 @@ var app = (function () {
 
     	async function view({ target }) {
     		let { innerText: post } = target;
-    		location.hash = `#/${post}`;
     		await render(post);
     	}
 
@@ -562,6 +571,8 @@ var app = (function () {
     	Object.keys($$props).forEach(key => {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console.warn(`<App> was created with unknown prop '${key}'`);
     	});
+
+    	const click_handler = () => render();
 
     	$$self.$capture_state = () => ({
     		markdownToHtml,
@@ -580,7 +591,7 @@ var app = (function () {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [text, posts, view];
+    	return [text, posts, view, render, click_handler];
     }
 
     class App extends SvelteComponentDev {

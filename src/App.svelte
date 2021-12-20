@@ -8,7 +8,6 @@ let posts = [ 'game' ];
 
 async function view({target}) {
   let {innerText: post} = target;
-  location.hash = `#/${post}`;
   await render(post);
 }
 
@@ -82,9 +81,9 @@ main {
 
 <main>
   <div id="sidebar">
-    <a href="/"><h1 id="thinking">Thinking Out Loud.</h1></a>
+    <a href="#" on:click={() => render()}><h1 id="thinking">Thinking Out Loud.</h1></a>
     {#each posts as post}
-      <a on:click={view}>{post}</a>
+      <a href="#/{post}" on:click={view}>{post}</a>
     {/each}
   </div>
   <div id="article">
