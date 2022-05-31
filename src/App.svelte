@@ -4,7 +4,7 @@ let text;
 
 render(location.hash.split('/').pop() || undefined);
 
-let posts = [ 'game' ];
+let posts = [ 'game', 'charm' ];
 
 async function view({target}) {
   let {innerText: post} = target;
@@ -48,7 +48,6 @@ a:hover {
 main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 10vh 0;
 }
 
@@ -59,10 +58,10 @@ main {
   padding: 0 5vw;
   margin-bottom: 10vh;
   min-width: 300px;
+  max-width: 1200px;
 }
 
 #sidebar {
-  flex: 1;
   padding: 0 5vw;
   min-width: 300px;
 }
@@ -84,6 +83,7 @@ main {
     <a href="#" on:click={() => render()}><h1 id="thinking">Thinking Out Loud.</h1></a>
     {#each posts as post}
       <a href="#/{post}" on:click={view}>{post}</a>
+      <br />
     {/each}
   </div>
   <div id="article">
