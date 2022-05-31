@@ -6,10 +6,10 @@ I stumbled upon [Go](https://go.dev) and [Charm](https://charm.sh) technologies 
 
 Some of my favourites are:
 
-* [Slides](https://github.com/maaslalani/slides): Terminal based presentation tool.
-* [Gambit](https://github.com/maaslalani/gambit): Play chess in your terminal.
-* [Draw](https://github.com/maaslalani/draw): Draw in your terminal.
-* [Confetty](https://github.com/maaslalani/confetty): Confetti in your TTY.
+* [Slides](https://github.com/maaslalani/slides), a tool that turns your markdown documents into a terminal slide deck.
+* [Gambit](https://github.com/maaslalani/gambit), play chess in the terminal locally or with friends over ssh.
+* [Draw](https://github.com/maaslalani/draw), a tool that lets you doodle in your terminal.
+* [Confetty](https://github.com/maaslalani/confetty), confetti in your tty.
 
 These tools have been useful to me and some of them have even been useful to others as well! If you, too, are a command-line enthusiast, I host the tools I build on my [GitHub](https://github.com/maaslalani).
 
